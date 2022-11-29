@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065794680301",
+    "project_id": "whatschat-b330b",
+    "storage_bucket": "whatschat-b330b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065794680301:android:f675bff63b35cefe72a3e4",
+        "android_client_info": {
+          "package_name": "com.example.creative.notes.whatschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065794680301-9hqhvqvconr830n8t42pbulcvo6bs4i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-j7nJBr_93pKO-VEu8ZD-5GvJAUBzLiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065794680301-9hqhvqvconr830n8t42pbulcvo6bs4i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
