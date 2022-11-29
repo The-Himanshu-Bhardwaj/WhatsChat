@@ -17,9 +17,10 @@
             android:layout_height="wrap_content"
             android:minHeight="?actionBarSize"
             android:padding="16dp"
+            android:fontFamily="@font/sans_meidum"
             android:text="@string/app_name"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20sp"
             />
 
         <com.google.android.material.tabs.TabLayout
