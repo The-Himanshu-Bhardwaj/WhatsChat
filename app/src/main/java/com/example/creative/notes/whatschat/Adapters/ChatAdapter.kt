@@ -1,11 +1,13 @@
 package com.example.creative.notes.whatschat.Adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.creative.notes.whatschat.Activities.ChatActivity
 import com.example.creative.notes.whatschat.Model.UserModel
 import com.example.creative.notes.whatschat.R
 import com.example.creative.notes.whatschat.databinding.UserListLayoutBinding
@@ -28,6 +30,12 @@ class ChatAdapter(var context: Context, var list : ArrayList<UserModel>) : Recyc
         var user = list[position]
         Glide.with(context).load(user.imageUrl).into(holder.binding.userImg)
         holder.binding.userName.text = user.name
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, ChatActivity::class.java)
+            intent.putExtra("uid", user.uid)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
