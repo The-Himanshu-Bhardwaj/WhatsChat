@@ -13,4 +13,6 @@
     <color name="accent">#25D366</color>
 
     <color name="shimmer_color">#e0e0e0</color>
+    <color name="yellow_new">#D9D92F</color>
+    <color name="dark_grey">#102027</color>
 </resources>
