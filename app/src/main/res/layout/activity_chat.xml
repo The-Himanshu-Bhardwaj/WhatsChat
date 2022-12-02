@@ -52,7 +52,7 @@
                 android:fontFamily="@font/sans_meidum"
                 android:padding="8dp"
                 android:paddingLeft="8dp"
-                android:text="Enter a message" />
+                android:hint="Enter a message" />
 
 
         </com.google.android.material.card.MaterialCardView>

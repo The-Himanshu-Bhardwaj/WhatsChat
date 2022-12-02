@@ -59,7 +59,7 @@ class ChatActivity : AppCompatActivity() {
                         database.reference.child("chats").child(receiverRoom).child("messages")
                             .child(randomKey!!).setValue(message).addOnSuccessListener {
                                 Toast.makeText(this, "Message Sent !", Toast.LENGTH_LONG).show()
-                                binding.msgBox.setText("")
+                                binding.msgBox.text = null
                             }
                     }
 
