@@ -66,5 +66,7 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     // safety net
     implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    // shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
 }

@@ -10,6 +10,7 @@ import com.example.creative.notes.whatschat.Adapters.ChatAdapter
 import com.example.creative.notes.whatschat.Model.UserModel
 import com.example.creative.notes.whatschat.R
 import com.example.creative.notes.whatschat.databinding.FragmentChatBinding
+import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -22,12 +23,15 @@ class ChatFragment : Fragment() {
     lateinit var binding : FragmentChatBinding
     lateinit var database: FirebaseDatabase
     lateinit var userList : ArrayList<UserModel>
+    lateinit var shimmer : ShimmerFrameLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentChatBinding.inflate(layoutInflater)
+        shimmer = ShimmerFrameLayout(requireContext())
+        shimmer.startShimmer()
 
         database = FirebaseDatabase.getInstance()
         userList = ArrayList()
@@ -43,6 +47,8 @@ class ChatFragment : Fragment() {
                         }
                     }
                     binding.userListRecycler.adapter = ChatAdapter(requireContext(), userList)
+                    shimmer.stopShimmer()
+                    binding.userListRecycler.visibility = View.VISIBLE
                 }
 
                 override fun onCancelled(error: DatabaseError) {

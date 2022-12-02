@@ -11,4 +11,6 @@
     <color name="colorPrimary">#128C72</color>
     <color name="colorPrimaryDark">#075E54</color>
     <color name="accent">#25D366</color>
+
+    <color name="shimmer_color">#e0e0e0</color>
 </resources>
